@@ -36,5 +36,5 @@ for i in range(3):
     plt.tick_params(axis='both', which='major', labelsize=20)
     plt.legend(loc='upper left', fontsize=12, ncol=3)
     plt.grid(True)
-    plt.savefig("parametersS.png", dpi=300)
+    plt.savefig("parametersS.png", dpi=600)
 plt.show()

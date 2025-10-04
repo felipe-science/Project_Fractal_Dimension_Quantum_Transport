@@ -30,5 +30,5 @@ for i in range(3):
     plt.legend(loc='upper left', fontsize=12, ncol=3)
     plt.grid(True)
     plt.ylim(0,3)
-plt.savefig("parametersG.png", dpi=300)
+plt.savefig("parametersG.png", dpi=600)
 plt.show()
