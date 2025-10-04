@@ -1,0 +1,33 @@
+==================METODO DA AUTOCORRELAÇÃO==================
+beta1  m3  condutancia tau = 22
+beta2  m3  condutancia tau = 16
+beta4  m3  condutancia tau = 12
+beta1  m4  condutancia tau = 3
+beta2  m4  condutancia tau = 1
+beta4  m4  condutancia tau = 1
+
+beta1  m3  ruido tau = 15
+beta2  m3  ruido tau = 11
+beta4  m3  ruido tau = 8
+beta1  m4  ruido tau = 2
+beta2  m4  ruido tau = 1
+beta4  m4  ruido tau = 1
+
+
+================METODO DA DENSIDAD DE MÁXIMOS================
+beta1  m3  condutancia      tau_ro = 8.333333333333334
+beta2  m3  condutancia      tau_ro = 6.666666666666666
+beta4  m3  condutancia      tau_ro = 4.629629629629631
+beta1  m4  condutancia      tau_ro = 0.9057971014492753
+beta2  m4  condutancia      tau_ro = 0.7716049382716049
+beta4  m4  condutancia      tau_ro = 0.6313131313131313
+
+beta1  m3 ruido      tau_ro = 4.901960784313725
+beta2  m3 ruido      tau_ro = 4.166666666666667
+beta4  m3 ruido      tau_ro = 3.2051282051282053
+beta1  m4 ruido      tau_ro = 0.7680491551459293
+beta2  m4 ruido      tau_ro = 0.6693440428380187
+beta4  m4 ruido      tau_ro = 0.5592841163310962
+
+
+

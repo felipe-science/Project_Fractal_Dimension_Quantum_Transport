@@ -1,0 +1,42 @@
+R      = 0.15 # Rashba term
+
+R_c1   = -t + R*sigma_x
+R_c2   = -t + R*(-sigma_x*0.5+sigma_y*0.866025)
+R_c3   = -t + R*(-sigma_x*0.5-sigma_y*0.866025)
+
+def make_system():
+
+    syst = kwant.Builder()
+
+    ## Anderson disorder
+    def onsite(site,salt):
+        return W*(uniform(repr(site),repr(salt))-0.5)
+
+    def RB_1(site_i,site_j,phi):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return  -R_c1*exp(0.5j*phi*(xi-xj)*(yi+yj))
+
+    def RB_2(site_i,site_j,phi):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return  -R_c2*exp(0.5j*phi*(xi-xj)*(yi+yj))
+
+    def RB_3(site_i,site_j,phi):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return  -R_c3*exp(0.5j*phi*(xi-xj)*(yi+yj))
+
+    #### Define the scattering region. ####
+
+    def wire(pos):
+        x, y = pos
+        return 0<=x<=Lx and 0<=y<=Ly
+
+    syst[graphene.shape(wire, (0, 0))] = onsite
+
+    #syst[kwant.builder.HoppingKind((0, 0), a, b)]  =  RB_1
+    #syst[kwant.builder.HoppingKind((0, 1), a, b)]  =  RB_2
+    syst[kwant.builder.HoppingKind((1, -1), b, a)] =  RB_3
+
+

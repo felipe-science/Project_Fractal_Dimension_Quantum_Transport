@@ -1,0 +1,558 @@
+# Grace project file
+#
+@version 50125
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 18 to "NimbusMonoL-Bold", "NimbusMonoL-Bold"
+@map font 19 to "NimbusMonoL-BoldOblique", "NimbusMonoL-BoldOblique"
+@map font 20 to "NimbusMonoL-Regular", "NimbusMonoL-Regular"
+@map font 21 to "NimbusMonoL-RegularOblique", "NimbusMonoL-RegularOblique"
+@map font 22 to "NimbusMonoPS-Bold", "NimbusMonoPS-Bold"
+@map font 23 to "NimbusMonoPS-BoldItalic", "NimbusMonoPS-BoldItalic"
+@map font 24 to "NimbusMonoPS-Italic", "NimbusMonoPS-Italic"
+@map font 25 to "NimbusMonoPS-Regular", "NimbusMonoPS-Regular"
+@map font 26 to "NimbusRoman-Bold", "NimbusRoman-Bold"
+@map font 27 to "NimbusRoman-BoldItalic", "NimbusRoman-BoldItalic"
+@map font 28 to "NimbusRoman-Italic", "NimbusRoman-Italic"
+@map font 29 to "NimbusRoman-Regular", "NimbusRoman-Regular"
+@map font 30 to "NimbusRomanNo9L-Medium", "NimbusRomanNo9L-Medium"
+@map font 31 to "NimbusRomanNo9L-MediumItalic", "NimbusRomanNo9L-MediumItalic"
+@map font 32 to "NimbusRomanNo9L-Regular", "NimbusRomanNo9L-Regular"
+@map font 33 to "NimbusRomanNo9L-RegularItalic", "NimbusRomanNo9L-RegularItalic"
+@map font 34 to "NimbusSans-Bold", "NimbusSans-Bold"
+@map font 35 to "NimbusSans-BoldItalic", "NimbusSans-BoldItalic"
+@map font 36 to "NimbusSans-Italic", "NimbusSans-Italic"
+@map font 37 to "NimbusSans-Regular", "NimbusSans-Regular"
+@map font 38 to "NimbusSansL-Bold", "NimbusSansL-Bold"
+@map font 39 to "NimbusSansL-BoldCondensed", "NimbusSansL-BoldCondensed"
+@map font 40 to "NimbusSansL-BoldCondensedItalic", "NimbusSansL-BoldCondensedItalic"
+@map font 41 to "NimbusSansL-BoldItalic", "NimbusSansL-BoldItalic"
+@map font 42 to "NimbusSansL-Regular", "NimbusSansL-Regular"
+@map font 43 to "NimbusSansL-RegularCondensed", "NimbusSansL-RegularCondensed"
+@map font 44 to "NimbusSansL-RegularCondensedItalic", "NimbusSansL-RegularCondensedItalic"
+@map font 45 to "NimbusSansL-RegularItalic", "NimbusSansL-RegularItalic"
+@map font 46 to "NimbusSansNarrow-Bold", "NimbusSansNarrow-Bold"
+@map font 47 to "NimbusSansNarrow-BoldOblique", "NimbusSansNarrow-BoldOblique"
+@map font 48 to "NimbusSansNarrow-Oblique", "NimbusSansNarrow-Oblique"
+@map font 49 to "NimbusSansNarrow-Regular", "NimbusSansNarrow-Regular"
+@map font 50 to "P052-Bold", "P052-Bold"
+@map font 51 to "P052-BoldItalic", "P052-BoldItalic"
+@map font 52 to "P052-Italic", "P052-Italic"
+@map font 53 to "P052-Roman", "P052-Roman"
+@map font 54 to "StandardSymbolsL-Regular", "StandardSymbolsL-Regular"
+@map font 55 to "StandardSymbolsPS-Regular", "StandardSymbolsPS-Regular"
+@map font 12 to "Symbol", "Symbol"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 61 to "URWBookman-Demi", "URWBookman-Demi"
+@map font 62 to "URWBookman-DemiItalic", "URWBookman-DemiItalic"
+@map font 63 to "URWBookman-Light", "URWBookman-Light"
+@map font 64 to "URWBookman-LightItalic", "URWBookman-LightItalic"
+@map font 65 to "URWBookmanL-DemiBold", "URWBookmanL-DemiBold"
+@map font 66 to "URWBookmanL-DemiBoldItalic", "URWBookmanL-DemiBoldItalic"
+@map font 67 to "URWBookmanL-Light", "URWBookmanL-Light"
+@map font 68 to "URWBookmanL-LightItalic", "URWBookmanL-LightItalic"
+@map font 69 to "URWChanceryL-MediumItalic", "URWChanceryL-MediumItalic"
+@map font 70 to "URWGothic-Book", "URWGothic-Book"
+@map font 71 to "URWGothic-BookOblique", "URWGothic-BookOblique"
+@map font 72 to "URWGothic-Demi", "URWGothic-Demi"
+@map font 73 to "URWGothic-DemiOblique", "URWGothic-DemiOblique"
+@map font 74 to "URWGothicL-Book", "URWGothicL-Book"
+@map font 75 to "URWGothicL-BookOblique", "URWGothicL-BookOblique"
+@map font 76 to "URWGothicL-Demi", "URWGothicL-Demi"
+@map font 77 to "URWGothicL-DemiOblique", "URWGothicL-DemiOblique"
+@map font 78 to "URWPalladioL-Bold", "URWPalladioL-Bold"
+@map font 79 to "URWPalladioL-BoldItalic", "URWPalladioL-BoldItalic"
+@map font 80 to "URWPalladioL-Italic", "URWPalladioL-Italic"
+@map font 81 to "URWPalladioL-Roman", "URWPalladioL-Roman"
+@map font 82 to "Z003-MediumItalic", "Z003-MediumItalic"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Sat Dec 10 18:39:13 2022"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 0, 0, 2.5, 3
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.150000, 0.850000
+@    title "Fractal m = 4      (\f{Symbol}b\f{}\C = 4)"
+@    title font 0
+@    title size 1.870000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "W"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.800000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 1
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.670000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "\f{Symbol}\x\ca\f{}\C G \f{Symbol}\x\cq\f{}\C"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.800000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 0.5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.670000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  on
+@    altxaxis  type zero false
+@    altxaxis  offset 0.000000 , 0.000000
+@    altxaxis  bar on
+@    altxaxis  bar color 1
+@    altxaxis  bar linestyle 1
+@    altxaxis  bar linewidth 1.0
+@    altxaxis  label ""
+@    altxaxis  label layout para
+@    altxaxis  label place auto
+@    altxaxis  label char size 1.800000
+@    altxaxis  label font 0
+@    altxaxis  label color 1
+@    altxaxis  label place normal
+@    altxaxis  tick on
+@    altxaxis  tick major 1
+@    altxaxis  tick minor ticks 1
+@    altxaxis  tick default 6
+@    altxaxis  tick place rounded true
+@    altxaxis  tick in
+@    altxaxis  tick major size 1.000000
+@    altxaxis  tick major color 1
+@    altxaxis  tick major linewidth 1.0
+@    altxaxis  tick major linestyle 1
+@    altxaxis  tick major grid off
+@    altxaxis  tick minor color 1
+@    altxaxis  tick minor linewidth 1.0
+@    altxaxis  tick minor linestyle 1
+@    altxaxis  tick minor grid off
+@    altxaxis  tick minor size 0.500000
+@    altxaxis  ticklabel on
+@    altxaxis  ticklabel format general
+@    altxaxis  ticklabel prec 5
+@    altxaxis  ticklabel formula ""
+@    altxaxis  ticklabel append ""
+@    altxaxis  ticklabel prepend ""
+@    altxaxis  ticklabel angle 0
+@    altxaxis  ticklabel skip 0
+@    altxaxis  ticklabel stagger 0
+@    altxaxis  ticklabel place normal
+@    altxaxis  ticklabel offset auto
+@    altxaxis  ticklabel offset 0.000000 , 0.010000
+@    altxaxis  ticklabel start type auto
+@    altxaxis  ticklabel start 0.000000
+@    altxaxis  ticklabel stop type auto
+@    altxaxis  ticklabel stop 0.000000
+@    altxaxis  ticklabel char size 1.670000
+@    altxaxis  ticklabel font 0
+@    altxaxis  ticklabel color 1
+@    altxaxis  tick place both
+@    altxaxis  tick spec type none
+@    altyaxis  on
+@    altyaxis  type zero false
+@    altyaxis  offset 0.000000 , 0.000000
+@    altyaxis  bar on
+@    altyaxis  bar color 1
+@    altyaxis  bar linestyle 1
+@    altyaxis  bar linewidth 1.0
+@    altyaxis  label ""
+@    altyaxis  label layout para
+@    altyaxis  label place auto
+@    altyaxis  label char size 1.800000
+@    altyaxis  label font 0
+@    altyaxis  label color 1
+@    altyaxis  label place normal
+@    altyaxis  tick on
+@    altyaxis  tick major 0.5
+@    altyaxis  tick minor ticks 1
+@    altyaxis  tick default 6
+@    altyaxis  tick place rounded true
+@    altyaxis  tick in
+@    altyaxis  tick major size 1.000000
+@    altyaxis  tick major color 1
+@    altyaxis  tick major linewidth 1.0
+@    altyaxis  tick major linestyle 1
+@    altyaxis  tick major grid off
+@    altyaxis  tick minor color 1
+@    altyaxis  tick minor linewidth 1.0
+@    altyaxis  tick minor linestyle 1
+@    altyaxis  tick minor grid off
+@    altyaxis  tick minor size 0.500000
+@    altyaxis  ticklabel on
+@    altyaxis  ticklabel format general
+@    altyaxis  ticklabel prec 5
+@    altyaxis  ticklabel formula ""
+@    altyaxis  ticklabel append ""
+@    altyaxis  ticklabel prepend ""
+@    altyaxis  ticklabel angle 0
+@    altyaxis  ticklabel skip 0
+@    altyaxis  ticklabel stagger 0
+@    altyaxis  ticklabel place normal
+@    altyaxis  ticklabel offset auto
+@    altyaxis  ticklabel offset 0.000000 , 0.010000
+@    altyaxis  ticklabel start type auto
+@    altyaxis  ticklabel start 0.000000
+@    altyaxis  ticklabel stop type auto
+@    altyaxis  ticklabel stop 0.000000
+@    altyaxis  ticklabel char size 1.670000
+@    altyaxis  ticklabel font 0
+@    altyaxis  ticklabel color 1
+@    altyaxis  tick place both
+@    altyaxis  tick spec type none
+@    legend on
+@    legend loctype view
+@    legend 0.85, 0.8
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 2
+@    s0 symbol size 1.000000
+@    s0 symbol color 4
+@    s0 symbol pattern 1
+@    s0 symbol fill color 4
+@    s0 symbol fill pattern 1
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 2.0
+@    s0 line color 4
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 4
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "/home/felipe/Documentos/Mestrado/Pesquisa/Simulação/Project_Fractal_Dimension_Quantum_Transport/Resultados/Resume/Universal/n162_m4_WxG_energia0.8eV_beta4/gráficos/G.dat"
+@    s0 legend  ""
+@target G0.S0
+@type xy
+0 2.087686
+0.05 2.257351
+0.1 2.309828
+0.15 2.295444
+0.2 2.268747
+0.25 2.23193
+0.3 2.171487
+0.35 2.112362
+0.4 2.086329
+0.45 2.028859
+0.5 2.009579
+0.55 1.951499
+0.6 1.912884
+0.65 1.865444
+0.7 1.868758
+0.75 1.822986
+0.8 1.769474
+0.85 1.760589
+0.9 1.704869
+0.95 1.642474
+1 1.635892
+1.05 1.566967
+1.1 1.547113
+1.15 1.510644
+1.2 1.498774
+1.25 1.434422
+1.3 1.410598
+1.35 1.40135
+1.4 1.360563
+1.45 1.340506
+1.5 1.305296
+1.55 1.279704
+1.6 1.273285
+1.65 1.221593
+1.7 1.162174
+1.75 1.134016
+1.8 1.12802
+1.85 1.086431
+1.9 1.009706
+1.95 1.004916
+2 0.9584901
+2.05 0.9577506
+2.1 0.9432007
+2.15 0.8982457
+2.2 0.8705228
+2.25 0.8702152
+2.3 0.8187675
+2.35 0.809703
+2.4 0.7795002
+2.45 0.7831696
+2.5 0.7264639
+2.55 0.7349398
+2.6 0.6947956
+2.65 0.6771887
+2.7 0.6631404
+2.75 0.6275795
+2.8 0.6123126
+2.85 0.602871
+2.9 0.570626
+2.95 0.5029554
+3 0.5091463
+3.05 0.482465
+3.1 0.487182
+3.15 0.4518422
+3.2 0.4624446
+3.25 0.4171903
+3.3 0.397379
+3.35 0.3622365
+3.4 0.3709516
+3.45 0.3384971
+3.5 0.3240268
+3.55 0.2907666
+3.6 0.3278743
+3.65 0.2703525
+3.7 0.2601716
+3.75 0.2256311
+3.8 0.2226686
+3.85 0.2147965
+3.9 0.1703155
+3.95 0.1824209
+4 0.1531139
+4.05 0.1712635
+4.1 0.1563839
+4.15 0.1347277
+4.2 0.1125382
+4.25 0.09681269
+4.3 0.08521197
+4.35 0.08946077
+4.4 0.09058179
+4.45 0.08575179
+4.5 0.06510315
+4.55 0.0627101
+4.6 0.05922055
+4.65 0.06093003
+4.7 0.05636148
+4.75 0.02905738
+4.8 0.0356209
+4.85 0.02639062
+4.9 0.02789319
+4.95 0.02173392
+&

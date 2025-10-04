@@ -1,0 +1,33 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import find_peaks
+
+Nfile = 156
+
+gamma = 0.00017240383779338435
+gamma = 0.00013917635122407998
+gamma = 0.00014083708429425972
+
+
+rho = 0
+for i in range(Nfile):
+
+    data = np.loadtxt(f"S{i}.dat", float)
+    E = data[:,0]/gamma
+    G = data[:,1]
+
+    peaks, _ = find_peaks(G, height=1)
+
+    deltaE = abs(E[peaks[0]] - E[peaks[-1]])
+    deltaE = abs(E[0] - E[-1])
+    #print(deltaE)
+    
+    rho += len(peaks)/deltaE
+
+rho = rho/(Nfile)
+print(rho)
+
+
+plt.plot(E/gamma,G, color = 'blue')
+plt.scatter(E[peaks]/gamma, G[peaks], color='black', zorder=2)
+plt.show()

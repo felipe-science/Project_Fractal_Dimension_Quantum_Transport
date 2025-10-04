@@ -1,0 +1,18 @@
+def hopping(site_i,site_j,phi):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return -t*exp(0.5j*phi*(xi-xj)*(yi+yj))
+
+    #### Define the scattering region. ####
+
+    def wire(pos):
+        x, y = pos
+        return 0<=x<=Lx and 0<=y<=Ly
+
+    syst[square.shape(wire, (0, 0))] = onsite
+    syst[square.neighbors(1)] = hopping
+
+
+
+
+

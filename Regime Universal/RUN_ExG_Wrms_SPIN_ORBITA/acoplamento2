@@ -1,0 +1,43 @@
+c_km = 1.0j*0.15*sigma_z
+
+def make_system():
+
+    syst = kwant.Builder()
+
+    ## Anderson disorder
+    def onsite(site,salt):
+        return W*(uniform(repr(site),repr(salt))-0.5)
+
+    def hopping(site_i,site_j,B):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return -t*exp(c*B*(xi-xj)*(yi+yj))
+
+    def KM_plus(site_i,site_j,B):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return  -c_km*exp(c*B*(xi-xj)*(yi+yj))
+
+    def KM_minus(site_i,site_j,B):
+        xi,yi = site_i.pos
+        xj,yj = site_j.pos
+        return   c_km*exp(c*B*(xi-xj)*(yi+yj))
+
+    #### Define the scattering region. ####
+
+    def wire(pos):
+        x, y = pos
+        return 0<=x<=Lx and 0<=y<=Ly
+
+    syst[graphene.shape(wire, (0, 0))] = onsite
+    #syst[graphene.neighbors(1)] = hopping
+
+    #syst.eradicate_dangling()
+
+    syst[kwant.builder.HoppingKind((1, 0), a, a)]  =  KM_plus
+    syst[kwant.builder.HoppingKind((0, 1), a, a)]  =  KM_minus
+    syst[kwant.builder.HoppingKind((1, -1), a, a)] =  KM_minus
+
+    syst[kwant.builder.HoppingKind((1, 0), b, b)]  = KM_minus
+    syst[kwant.builder.HoppingKind((0, 1), b, b)]  = KM_plus
+    syst[kwant.builder.HoppingKind((1, -1), b, b)] = KM_plus

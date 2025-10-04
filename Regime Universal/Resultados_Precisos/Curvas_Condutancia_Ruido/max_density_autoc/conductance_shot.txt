@@ -1,0 +1,6 @@
+beta1  m3 ruido      tau_ro = 0.0005847953216374269     rho=285.0
+beta2  m3 ruido      tau_ro = 0.0004329004329004329     rho=385.0
+beta4  m3 ruido      tau_ro = 0.0003058103975535168     rho=545.0
+beta1  m4 ruido      tau_ro = 7.680491551459293e-05     rho=2170.0
+beta2  m4 ruido      tau_ro = 6.68002672010688e-05     rho=2495.0
+beta4  m4 ruido      tau_ro = 5.688282138794084e-05     rho=2930.0

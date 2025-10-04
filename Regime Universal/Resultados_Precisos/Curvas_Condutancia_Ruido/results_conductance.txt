@@ -1,0 +1,6 @@
+beta1  m3  condutancia      tau_ro = 26.25375692484724    rho = 0.021
+beta2  m3  condutancia      tau_ro = 23.713070770829766    rho = 0.02325
+beta4  m3  condutancia      tau_ro = 14.227842462497861    rho = 0.03875
+beta1  m4  condutancia      tau_ro = 3.062938307898845    rho = 0.18
+beta2  m4  condutancia      tau_ro = 2.7226118292434176    rho = 0.2025
+beta4  m4  condutancia      tau_ro = 2.1123712468267897    rho = 0.261

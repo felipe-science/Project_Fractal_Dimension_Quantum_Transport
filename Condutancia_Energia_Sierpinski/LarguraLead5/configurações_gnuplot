@@ -1,0 +1,47 @@
+   # for pngs
+ set terminal pngcairo size 1600,600 font ',18' enhanced
+ set output "pic_multi_kenngr_ana.png 
+
+ set style line 2 lc rgb '#0ce90b' lt 1 lw 1.5 # --- green
+ set style line 3 lc rgb '#09e0b3' lt 1 lw 1.5 #      .
+ set style line 4 lc rgb '#065fd8' lt 1 lw 1.5 #      .
+ set style line 5 lc rgb '#4e04cf' lt 1 lw 1.5 #      .
+ set style line 6 lc rgb '#c702a9' lt 1 lw 1.5 #      .
+ set style line 7 lc rgb '#bf000a' lt 1 lw 1.5 # --- red
+
+ set multiplot layout 1,2 
+ set xtics rotate
+ set tmargin 5
+
+
+ set xtics 12
+ set grid xtics
+
+ # set axis labels
+set ylabel 'T [K]'
+set xlabel 'Zeit [h]'
+
+# select range
+set xrange [0:48]
+set yrange [290.15:306.15]
+
+set title "(a) Bodentemperatur"
+set key top right Right 
+
+plot   'par_crank_hom01lvls.04.dat' u 1:3 with lines ls 7 notitle,\
+       'par_crank_str01lvls.16.dat' u 1:3 with lines ls 2 notitle,\
+       500  t 'z = 4 cm' ls 7 lw 4,\
+       500  t 'z = 16 cm' ls 2 lw 4
+
+
+################################################
+
+set title "(b) Bodenwärmestrom an der Oberfläche"
+set ylabel 'G [W m^{-2}]'
+set yrange[-110:110]
+unset key
+
+plot 'par_crank_str01_ghf.dat' u 1:3 with lines
+
+
+unset multiplot
