@@ -9,7 +9,7 @@ from pylab import scatter, plot, show, xlabel, ylabel, title, figure, tick_param
 import shutil
 from joblib import Parallel, delayed   # <-- paralelização
 
-file_i = 500
+file_i = 126
 file_f = 1000
 
 ## define Pauli-matrices
