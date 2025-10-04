@@ -12,7 +12,7 @@ import shutil
 from joblib import Parallel, delayed   # <-- paralelização
 
 file_i = 0
-file_f = 500
+file_f = 1
 
 
 ## define Pauli-matrices
