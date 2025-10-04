@@ -16,7 +16,7 @@ def density_ro(g, a, b):
     ro = (1/(2*np.pi))*np.sqrt((6*b*(a+1))/(g**2))
     return ro
 
-cutoff = 12
+cutoff = 20
 
 
 data = np.loadtxt("mean_autocorrelation.dat",float)
@@ -29,7 +29,7 @@ datay = datay[:cutoff]
 NN = len(datax)
 for k in range(NN):
     datax[k] = datax[k]/1
-    datax[k] = datax[k]/0.0007662792136859497
+    #datax[k] = datax[k]/0.0007662792136859497
 
 # Fazer o ajuste (fit) da função lorentziana aos dados
 initial_guess = [1, 1, 1]  # Gama, alpha, beta iniciais

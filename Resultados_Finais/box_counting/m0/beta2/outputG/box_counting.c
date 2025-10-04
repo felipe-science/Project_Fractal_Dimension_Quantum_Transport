@@ -105,7 +105,7 @@ void box_counting(float valoresx[Npontos], float valoresy[Npontos], float bc_log
     
     
     l = 0.125;
-    while(l > 0.0015625)
+    while(l > 0.00625)
     {
         nx = (int)(Lx/l);
         ny = (int)(Ly/l);

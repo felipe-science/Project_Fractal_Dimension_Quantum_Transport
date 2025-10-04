@@ -9,8 +9,8 @@ plt.show()
 x = data[:,0]
 y = data[:,1]
 
-y = y/42
-x = (x+2)/4
+y = y/4
+x = (x+2)/2
 
 plt.plot(x,y)
 plt.show()

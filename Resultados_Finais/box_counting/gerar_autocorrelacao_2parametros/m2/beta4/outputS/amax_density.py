@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import find_peaks
 
-Nfile = 10
+Nfile = 188
 
 gamma=0.0007662792136859497
 
