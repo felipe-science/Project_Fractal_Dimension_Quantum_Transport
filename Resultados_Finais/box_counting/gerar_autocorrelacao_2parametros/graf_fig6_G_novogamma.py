@@ -8,7 +8,7 @@ data = np.loadtxt("parametersG_beta1.dat", float)
 listm = data[:,0]
 gamma = data[:,3]
 
-gamma = [0.00015178029667030186, 0.0001740, 0.000186361, 0.00014704, 0.00012854]
+gamma = [0.00015178029667030186, 0.0001740, 0.000186361, 0.00014704, 0.000169112]
 
 
 plt.style.use(['science'])
@@ -21,7 +21,7 @@ data0 = np.loadtxt("m0/beta1/outputGn/G8.dat")
 data1 = np.loadtxt("m1/beta1/outputG/G20.dat")
 data2 = np.loadtxt("m2/beta1/outputG/G11.dat")
 data3 = np.loadtxt("m3/beta1/outputG/G28.dat")
-data4 = np.loadtxt("m4/beta1/outputG/G1.dat")
+data4 = np.loadtxt("m4/beta1/nova_simulacao/outputG/G14.dat")
 
 E0, G0 = data0[:,0], data0[:,1]
 E1, G1 = data1[:,0], data1[:,1]
@@ -68,7 +68,7 @@ axes[4].set_ylabel(r"$G(e/h)$", fontsize=16)
 fig.subplots_adjust(hspace=1.0)  # aumenta o espaçamento entre os subplots
 
 plt.savefig("fig_grid.png", dpi=600)
-plt.show()
+#plt.show()
 
 density0 = len(peaks0)/(abs(E0[0]-E0[-1])/gamma[0])
 density1 = len(peaks1)/(abs(E1[0]-E1[-1])/gamma[1])
