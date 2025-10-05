@@ -26,7 +26,7 @@ NN = len(datax)
 for k in range(NN):
     #datax[k] = datax[k]/0.0002694
     datax[k] = datax[k]/1
-    datax[k] = datax[k]/0.00015751876469692502
+    datax[k] = datax[k]/0.00014704
 
 # Fazer o ajuste (fit) da função lorentziana aos dados
 initial_guess = [1, 1, 1]  # Gama, alpha, beta iniciais

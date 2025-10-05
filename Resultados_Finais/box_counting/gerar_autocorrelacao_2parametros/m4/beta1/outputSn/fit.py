@@ -29,9 +29,7 @@ datay = datay[:cutoff]
 NN = len(datax)
 for k in range(NN):
     datax[k] = datax[k]/1
-    #datax[k] = datax[k]/8.850615470540464e-05
-    #datax[k] = datax[k]/0.0001728396159608747
-    #datax[k] = datax[k]/0.0001784681107098753
+    datax[k] = datax[k]/7.74e-5
 
 # Fazer o ajuste (fit) da função lorentziana aos dados
 initial_guess = [1, 1, 1]  # Gama, alpha, beta iniciais
@@ -41,10 +39,6 @@ popt, _ = curve_fit(f, datax, datay, p0=initial_guess, bounds=([1e-10, 0, 0], [n
 Gamma_fit, alpha_fit, beta_fit = popt
 
 
-
-# Ajuste dos dados
-#initial_guess = [1.29, 0.8, 0.0023]  # Chute inicial para os parâmetros: amp, mean, stddev
-#params, covariance = curve_fit(f, datax, datay, p0=initial_guess)
 
 #g, a, b = params
 ro = density_ro(Gamma_fit, alpha_fit, beta_fit)

@@ -28,9 +28,7 @@ NN = len(datax)
 for k in range(NN):
     #datax[k] = datax[k]/0.00012855
     datax[k] = datax[k]/1
-    #datax[k] = datax[k]/0.000178393470581001
-    #datax[k] = datax[k]/0.00019399498969002455
-    datax[k] = datax[k]/0.00017899498969002455
+    datax[k] = datax[k]/0.00012854
 
 
 # Fazer o ajuste (fit) da função lorentziana aos dados

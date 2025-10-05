@@ -29,7 +29,7 @@ datay = datay[:cutoff]
 NN = len(datax)
 for k in range(NN):
     datax[k] = datax[k]/1
-    datax[k] = datax[k]/0.00012242333999607424
+    datax[k] = datax[k]/0.000101059
 
 # Fazer o ajuste (fit) da função lorentziana aos dados
 initial_guess = [1, 1, 1]  # Gama, alpha, beta iniciais
