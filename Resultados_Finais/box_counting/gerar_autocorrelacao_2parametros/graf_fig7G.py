@@ -20,7 +20,6 @@ E3, cor3 = data3G[:,0], data3G[:,1]
 E4, cor4 = data4G[:,0], data4G[:,1]
 
 
-
 plt.style.use(['science'])
 fig, ax = plt.subplots(figsize=(6, 6))
 
@@ -42,7 +41,7 @@ plt.grid(True)
 axins = inset_axes(ax, width="50%", height="40%", loc='upper right')
 
 # Plota a mesma curva no inset
-axins.plot(E0, cor0, label='lorentzian', color='black', linewidth=2)
+axins.plot(E0, cor0, label='lorentzian', color='black', linewidth=5)
 axins.plot(E0, cor0,':', label=r'$m=0$', color='C0', linewidth=2)
 axins.plot(E1, cor1,'--', label=r'$m=1$', color='C1', linewidth=2)
 axins.plot(E2, cor2,'-.', label=r'$m=2$', color='C2', linewidth=2)

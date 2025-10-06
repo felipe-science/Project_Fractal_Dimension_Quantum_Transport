@@ -34,7 +34,7 @@ def autocorrelation(signal):
 
 def main():
     
-    Nfile = 16
+    Nfile = 360
 
     mean_corr = np.zeros([NP])
 

@@ -1,92 +1,28 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass{article}
 \usepackage{amsmath}
-\usepackage{amssymb}
 
 \begin{document}
 	
-	\section*{Hamiltoniano do Sistema Sierpinski com Desordem Anderson - $\beta=1$}
+	\section*{Hamiltonianos do Sistema Sierpinski}
 	
-	O Hamiltoniano do sistema é dado por:
-	
+	---
+	\subsection*{Hamiltoniano do Sistema Sierpinski com Desordem Anderson - $\beta=1$}
 	\begin{equation}
-		\begin{aligned}
-			H &= \sum_{i \in \text{Sierpinski}} \epsilon_i \, c_i^\dagger c_i
-			- \sum_{\langle i,j \rangle \in \text{Sierpinski}} t \, c_i^\dagger c_j, \\
-			\epsilon_i &= W \left( \text{uniforme}[-0.5, 0.5] \right) \, \sigma_0, \\
-			t &= \sigma_0,
-		\end{aligned}
+		H=\sum_{i\in \text{Sierpinski}}\epsilon_{i}c_{i}^{\dagger}c_{i}-\sum_{\langle i,j\rangle\in \text{Sierpinski}}tc_{i}^{\dagger}c_{j}
 	\end{equation}
 	
-	\noindent onde:
-	
-	\begin{itemize}
-		\item $c_i^\dagger = \begin{pmatrix} c_{i\uparrow}^\dagger & c_{i\downarrow}^\dagger \end{pmatrix}$ é o operador de criação no site $i$ para os dois spinors.
-		\item $\sigma_0 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$ é a matriz identidade $2 \times 2$ (spin-degenerado).
-		\item $i \in \text{Sierpinski}$ indica que apenas os sites restantes após a construção fractal são considerados.
-		\item $\langle i,j \rangle$ indica pares de sites vizinhos conectados pelo hopping $t$.
-		\item $W$ é a intensidade da desordem Anderson.
-	\end{itemize}
-	
-	
-	
-	
-	\section*{Hamiltoniano do Sistema Sierpinski com Desordem Anderson - $\beta=2$}
-	
-	
-	O Hamiltoniano do sistema é dado por:
-	
+	---
+	\subsection*{Hamiltoniano do Sistema Sierpinski com Desordem Anderson - $\beta=2$}
 	\begin{equation}
-		\begin{aligned}
-			H &= \sum_{i \in \text{Sierpinski}} \epsilon_i \, c_i^\dagger c_i
-			- \sum_{\langle i,j \rangle \in \text{Sierpinski}} t_{ij} \, c_i^\dagger c_j, \\
-			\epsilon_i &= W \left( \text{uniforme}[-0.5, 0.5] \right) \, \sigma_0, \\
-			t_{ij} &= \sigma_0 \, e^{ i \frac{\phi}{2} (x_i - x_j)(y_i + y_j) },
-		\end{aligned}
+		H=\sum_{i\in \text{Sierpinski}}\epsilon_{i}c_{i}^{\dagger}c_{i}-\sum_{\langle i,j\rangle\in \text{Sierpinski}}t_{ij}c_{i}^{\dagger}c_{j}
 	\end{equation}
 	
-	\noindent onde:
+	$t_{ij}=\sigma_{0}e^{i\frac{\phi}{2}(x_{i}-x_{j})(y_{i}+y_{j})}$
 	
-	\begin{itemize}
-		\item $c_i^\dagger = \begin{pmatrix} c_{i\uparrow}^\dagger & c_{i\downarrow}^\dagger \end{pmatrix}$ é o operador de criação no site $i$ para os dois spinors.
-		\item $\sigma_0 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$ é a matriz identidade $2 \times 2$ (spin-degenerado).
-		\item $i \in \text{Sierpinski}$ indica que apenas os sites restantes após a construção fractal são considerados.
-		\item $\langle i,j \rangle$ indica pares de sites vizinhos conectados pelo hopping $t_{ij}$.
-		\item $W$ é a intensidade da desordem Anderson.
-		\item $\phi$ é a fase de Peierls, responsável por simular efeitos de campo magnético ou fluxos.
-	\end{itemize}
-	
-	
-	
-	
-	
-	\section*{Hamiltoniano do Sistema Sierpinski com Desordem, Spin-Orbit e Campo Zeeman}
-	
-	O Hamiltoniano do sistema é dado por:
-	
+	---
+	\subsection*{Hamiltoniano do Sistema Sierpinski com Desordem, Spin-Orbit e Campo Zeeman}
 	\begin{equation}
-		\begin{aligned}
-			H &= \sum_{i \in \text{Sierpinski}} \left( \epsilon_i + e_z \, \sigma_z \right) c_i^\dagger c_i
-			- \sum_{\langle i,j \rangle_x} \left( t \, \sigma_0 - \frac{i \alpha}{2} \sigma_y \right) c_i^\dagger c_j
-			- \sum_{\langle i,j \rangle_y} \left( t \, \sigma_0 + \frac{i \alpha}{2} \sigma_x \right) c_i^\dagger c_j, \\
-			\epsilon_i &= W \left( \text{uniforme}[-0.5, 0.5] \right)
-		\end{aligned}
+		H=\sum_{i\in \text{Sierpinski}}(\epsilon_{i}+e_{z}\sigma_{z})c_{i}^{\dagger}c_{i}-\sum_{\langle i,j\rangle_{x}}(t\sigma_{0}-\frac{i\alpha}{2}\sigma_{y})c_{i}^{\dagger}c_{j}-\sum_{\langle i,j\rangle_{y}}(t\sigma_{0}+\frac{i\alpha}{2}\sigma_{x})c_{i}^{\dagger}c_{j}
 	\end{equation}
-	
-	\noindent onde:
-	
-	\begin{itemize}
-		\item $c_i^\dagger = \begin{pmatrix} c_{i\uparrow}^\dagger & c_{i\downarrow}^\dagger \end{pmatrix}$ é o operador de criação no site $i$.
-		\item $\sigma_0, \sigma_x, \sigma_y, \sigma_z$ são as matrizes de Pauli.
-		\item $i \in \text{Sierpinski}$ indica que apenas os sites restantes após a construção fractal são considerados.
-		\item $\langle i,j \rangle_x$ e $\langle i,j \rangle_y$ indicam pares de sites vizinhos nas direções $x$ e $y$, respectivamente.
-		\item $W$ é a intensidade da desordem Anderson.
-		\item $e_z$ é o termo Zeeman (campo magnético).
-		\item $\alpha$ é a intensidade do spin-orbit Rashba.
-	\end{itemize}
-	
-	
-	
-	
-	
 	
 \end{document}

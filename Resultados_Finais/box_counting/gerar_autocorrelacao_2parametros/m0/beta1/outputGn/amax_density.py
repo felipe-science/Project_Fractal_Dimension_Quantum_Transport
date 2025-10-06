@@ -4,7 +4,7 @@ from scipy.signal import find_peaks
 
 Nfile = 128
 
-gamma = 0.00017240383779338435
+#gamma = 0.00017240383779338435
 gamma = 0.00016354161608604713
 
 

@@ -29,6 +29,9 @@ def ajuste_curva(xd, yd):
 
     print("\nDimensao Fractal = ",a)
 
+    print(f"a = {a}")
+    print(f"b = {b}")
+
 data = loadtxt("DADOS_BC.dat",float)
 
 pontosx = data[:,0]

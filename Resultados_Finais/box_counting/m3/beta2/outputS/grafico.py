@@ -24,10 +24,13 @@ def ajuste_curva(xd, yd):
     xlabel("log(1/l)", fontsize='15')
     ylabel("log(N)", fontsize='15')
     tick_params(labelsize='12')
-    savefig('reg.png', format='png')
+    savefig('condutancia_D'+str(round(a,2))+'.png', format='png')
     show()
 
     print("\nDimensao Fractal = ",a)
+
+    print(f"a = {a}")
+    print(f"b = {b}")
 
 data = loadtxt("DADOS_BC.dat",float)
 
