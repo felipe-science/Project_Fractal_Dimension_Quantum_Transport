@@ -26,7 +26,7 @@ for i in range(5):
     y = y-y[0]
     datay = datay-datay[0]
 
-    plt.scatter(datax, datay, label=rf'$m={i}$')
+    plt.scatter(datax, datay, label=rf'$m={i}$; $tan(\theta)={round(lista[i],2)}$')
     plt.plot(x,y, linewidth=2)
 
 
@@ -35,7 +35,6 @@ plt.ylabel('$log(N)$', fontsize=20)
 plt.title('Shot Noise Power', fontsize=22)
 plt.tick_params(labelsize=18)
 
-plt.legend(loc='best', fontsize=15)
-plt.grid(True)
+plt.legend(loc='best', fontsize=16)
 plt.savefig('figSd.png', dpi=600)
 plt.show()
